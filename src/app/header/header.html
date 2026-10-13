@@ -1,0 +1,13 @@
+<header>
+    <h1>{{ siteTitle }}</h1>
+    <div class="user-selection">
+        @if(isLoggedIn){
+        <span>Добро Пожаловать!</span>
+        <button (click)="toggleLogin()">Выйти</button>
+        }
+        @else {
+        <span>Пожалуйста, войдите в систему</span>
+        <button (click)="toggleLogin()">Войти</button>
+        }
+    </div>
+</header>
